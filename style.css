@@ -1,0 +1,157 @@
+* {
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+header {
+  margin-top: 20px;
+  margin-left: 50px;
+  border-bottom: 1px solid rgb(170, 202, 202);
+  box-shadow: 2px 2px 30px rgb(15, 168, 224);
+  width: 50%;
+}
+
+h1 {
+  font-size: 6rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  user-select: none;
+  font-weight: normal;
+}
+
+#split-time__title {
+  color: coral;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 4rem;
+  text-transform: uppercase;
+  animation: forTitle 5s;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+@keyframes forTitle {
+  0% {
+    width: 0ch;
+  }
+
+  100% {
+    width: 19ch;
+  }
+}
+
+.buttons {
+  display: flex;
+  gap: 5%;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 768px) {
+  * {
+    word-wrap: break-word !important;
+    width: auto;
+  }
+
+  .buttons {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+  }
+
+  button {
+    padding: auto;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  header {
+    margin-top: auto;
+    margin-left: auto;
+    word-wrap: break-word;
+    width: auto;
+  }
+
+  .time-details {
+    width: auto;
+  }
+}
+
+button {
+  border-radius: 100% 100%;
+  font-size: 1.3rem;
+  text-align: center;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+}
+
+#startTimer {
+  background-color: rgb(0, 255, 191);
+  color: aliceblue;
+  border: none;
+}
+
+#startTimer:active {
+  background-color: rgb(14, 124, 97);
+  color: aliceblue;
+  border: none;
+}
+
+#pauseTimer,
+#resetTimer,
+#splitTimer {
+  border: 1px solid rgb(170, 202, 202);
+  color: rgb(170, 202, 202);
+  cursor: pointer;
+}
+
+#pauseTimer:hover,
+#resetTimer:hover,
+#splitTimer:hover {
+  border: 4px solid rgb(170, 202, 202);
+  color: rgb(170, 202, 202);
+}
+
+main {
+  margin-top: 50px;
+}
+
+.time-details {
+  width: 50%;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  column-gap: 0px;
+}
+
+li {
+  display: inline;
+  border: 2px solid rgb(19, 212, 222);
+  box-shadow: 4px 4px 2px blueviolet;
+  padding: 10px 0px;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 1.3rem;
+}
+
+#set-end__value,
+#set-start__value {
+  font-weight: normal;
+  text-align: left;
+}
+
+#setList {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+#split-time__detail {
+  width: 200%;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Ali Ijaz" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Stopwatch</title>
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <link rel="Stylesheet" href="style.css" />
+      <h1 id="stopwatch">00 : 00 : 00 : 00</h1>
+
+      <p id="split-time__title">split time</p>
+
+      <div class="buttons">
+        <button id="startTimer">Start</button>
+        <button id="pauseTimer">Pause</button>
+        <button id="splitTimer">Split</button>
+        <button id="resetTimer">Reset</button>
+      </div>
+    </header>
+    <main>
+      <nav class="time-details">
+        <ul>
+          <li id="split-time__detail">Split Time Record</li>
+        </ul>
+        <ul id="setList" name="setListSql"></ul>
+      </nav>
+    </main>
+  </body>
+</html>
